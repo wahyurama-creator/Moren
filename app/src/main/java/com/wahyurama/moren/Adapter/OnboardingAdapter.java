@@ -1,0 +1,63 @@
+package com.wahyurama.moren.Adapter;
+
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.wahyurama.moren.OnboardingItem;
+import com.wahyurama.moren.R;
+
+import java.util.List;
+
+public class OnboardingAdapter extends RecyclerView.Adapter<OnboardingAdapter.OnboardingViewHolder> {
+
+    private List<OnboardingItem> onboardingItemList;
+
+    public OnboardingAdapter(List<OnboardingItem> onboardingItemList) {
+        this.onboardingItemList = onboardingItemList;
+    }
+
+    @NonNull
+    @Override
+    public OnboardingViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        return new OnboardingViewHolder(
+                LayoutInflater.from(parent.getContext()).inflate(
+                        R.layout.item_container_onboarding, parent, false
+                )
+        );
+    }
+
+    @Override
+    public void onBindViewHolder(@NonNull OnboardingViewHolder holder, int position) {
+        holder.setOnboardingData(onboardingItemList.get(position));
+    }
+
+    @Override
+    public int getItemCount() {
+        return onboardingItemList.size();
+    }
+
+    static class OnboardingViewHolder extends RecyclerView.ViewHolder {
+        private TextView textTitle;
+        private TextView textDescription;
+        private ImageView imageOnboarding;
+
+        OnboardingViewHolder(@NonNull View itemView) {
+            super(itemView);
+            textTitle = itemView.findViewById(R.id.textTitle);
+            textDescription = itemView.findViewById(R.id.textDescription);
+            imageOnboarding = itemView.findViewById(R.id.imageOnboarding);
+        }
+
+        void setOnboardingData(OnboardingItem onboardingItem) {
+            textTitle.setText(onboardingItem.getTitle());
+            textDescription.setText(onboardingItem.getDescription());
+            imageOnboarding.setImageResource(onboardingItem.getImages());
+        }
+    }
+}
