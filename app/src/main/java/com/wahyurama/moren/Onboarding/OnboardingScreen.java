@@ -1,4 +1,4 @@
-package com.wahyurama.moren;
+package com.wahyurama.moren.Onboarding;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
@@ -13,8 +13,11 @@ import androidx.core.content.ContextCompat;
 import androidx.viewpager2.widget.ViewPager2;
 
 import com.google.android.material.button.MaterialButton;
+import com.google.firebase.auth.FirebaseAuth;
 import com.wahyurama.moren.Adapter.OnboardingAdapter;
-import com.wahyurama.moren.SignIn.SignInActivity;
+import com.wahyurama.moren.MainActivity;
+import com.wahyurama.moren.R;
+import com.wahyurama.moren.Sign.SignInActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -24,6 +27,7 @@ public class OnboardingScreen extends AppCompatActivity {
     private OnboardingAdapter onboardingAdapter;
     private LinearLayout layoutOnboardingIndicator;
     private MaterialButton buttonOnboardingAction;
+    private FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +37,13 @@ public class OnboardingScreen extends AppCompatActivity {
         layoutOnboardingIndicator =
                 findViewById(R.id.layoutOnboardingIndicator);
         buttonOnboardingAction = findViewById(R.id.buttonOnboardingAction);
+
+        mAuth = FirebaseAuth.getInstance();
+
+        if (mAuth.getCurrentUser() != null) {
+            startActivity(new Intent(getApplicationContext(), MainActivity.class));
+            finishAffinity();
+        }
 
         setUpOnboardingItems();
 
@@ -63,6 +74,12 @@ public class OnboardingScreen extends AppCompatActivity {
             }
         });
 
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        finish();
     }
 
     private void setUpOnboardingItems() {

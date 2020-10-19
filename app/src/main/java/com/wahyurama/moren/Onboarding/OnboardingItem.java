@@ -1,4 +1,4 @@
-package com.wahyurama.moren;
+package com.wahyurama.moren.Onboarding;
 
 public class OnboardingItem {
     private int images;

@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">Moren</string>
+    <string name="welcome_back">Welcome Back,</string>
+    <string name="login_to_continue">Login to continue</string>
+    <string name="email_address">Email Address</string>
+    <string name="password">Password</string>
+    <string name="login">login</string>
+    <string name="don_t_have_an_account">Dont have an account?</string>
+    <string name="sign_up_now">Sign up now</string>
+    <string name="create_your_account">Create Your Account,</string>
+    <string name="sign_up_and_get_started">Sign up and get started</string>
+    <string name="full_name">Full Name</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="sign_up">sign up</string>
+    <string name="moren">Moren</string>
+    <string name="day">/ Day</string>
+    <string name="available_cars">Available Cars</string>
 </resources>

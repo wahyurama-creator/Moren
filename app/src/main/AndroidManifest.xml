@@ -9,8 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Moren">
-        <activity android:name=".SignIn.SignInActivity"></activity>
-        <activity android:name=".OnboardingScreen">
+        <activity android:name=".Sign.SignUpActivity"></activity>
+        <activity android:name=".Sign.SignInActivity" />
+        <activity android:name=".Onboarding.OnboardingScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
