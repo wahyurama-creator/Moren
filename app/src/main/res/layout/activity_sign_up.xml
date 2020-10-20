@@ -17,7 +17,7 @@
         android:visibility="visible"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_back" />
+        app:srcCompat="@drawable/ic_baseline_keyboard_backspace_24" />
 
     <TextView
         android:id="@+id/textView2"
@@ -61,7 +61,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="50dp"
         android:background="@drawable/btn_input"
-        android:drawableStart="@drawable/ic_account"
+        android:drawableStart="@drawable/ic_baseline_person_24"
         android:drawablePadding="20dp"
         android:elevation="5dp"
         android:fontFamily="@font/montserrat"
@@ -83,8 +83,8 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="50dp"
         android:background="@drawable/btn_input"
-        android:drawableStart="@drawable/ic_mail"
-        android:drawablePadding="15dp"
+        android:drawableStart="@drawable/ic_baseline_email_24"
+        android:drawablePadding="20dp"
         android:elevation="5dp"
         android:fontFamily="@font/montserrat"
         android:hint="@string/email_address"
@@ -105,7 +105,7 @@
         android:layout_marginTop="12dp"
         android:layout_marginEnd="50dp"
         android:background="@drawable/btn_input"
-        android:drawableStart="@drawable/ic_lock"
+        android:drawableStart="@drawable/ic_baseline_lock_24"
         android:drawablePadding="20dp"
         android:elevation="5dp"
         android:ems="10"
@@ -127,7 +127,7 @@
         android:layout_marginTop="12dp"
         android:layout_marginEnd="50dp"
         android:background="@drawable/btn_input"
-        android:drawableStart="@drawable/ic_lock"
+        android:drawableStart="@drawable/ic_baseline_lock_24"
         android:drawablePadding="20dp"
         android:elevation="5dp"
         android:ems="10"
