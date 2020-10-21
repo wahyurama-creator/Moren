@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "809994235515",
+    "firebase_url": "https://moren-555ed.firebaseio.com",
+    "project_id": "moren-555ed",
+    "storage_bucket": "moren-555ed.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:809994235515:android:e2fa6a7e86806f32777cde",
+        "android_client_info": {
+          "package_name": "com.wahyurama.moren"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "809994235515-qll0dear7elgtonvjc4noaaclnckeo5r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXNV7cFUG1XSZJh6gXywtFp3FlbU2vDjU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "809994235515-qll0dear7elgtonvjc4noaaclnckeo5r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
