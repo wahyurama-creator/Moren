@@ -60,6 +60,9 @@ public class MainActivity extends AppCompatActivity {
                     car.setImage(dataSnapshot.child("image").getValue().toString());
                     car.setMerk(dataSnapshot.child("merk").getValue().toString());
                     car.setType(dataSnapshot.child("type").getValue().toString());
+                    car.setDesc(dataSnapshot.child("desc").getValue().toString());
+                    car.setTransmission(dataSnapshot.child("transmission").getValue().toString());
+                    car.setSeat(dataSnapshot.child("seat").getValue().toString());
                     car.setPrice(dataSnapshot.child("price").getValue().toString());
 
                     carList.add(car);

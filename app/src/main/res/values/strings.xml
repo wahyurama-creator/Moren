@@ -15,4 +15,5 @@
     <string name="moren">Moren</string>
     <string name="day">/ Day</string>
     <string name="available_cars">Available Cars</string>
+    <string name="select_date">select date</string>
 </resources>
