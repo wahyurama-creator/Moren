@@ -2,6 +2,14 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.wahyurama.moren">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission-sdk-23 android:name="android.permission.INTERNET" />
+    <uses-permission-sdk-23 android:name="android.permission.CAMERA" />
+    <uses-permission-sdk-23 android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,17 +17,26 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Moren">
-        <activity android:name=".DetailActivity"></activity>
-        <activity android:name=".Sign.SignUpActivity" />
-        <activity android:name=".Sign.SignInActivity" />
-        <activity android:name=".Onboarding.OnboardingScreen">
+        <activity
+            android:name=".App.SplashActivity"
+            android:theme="@style/Theme.Moren.WhiteStatusbar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
+
+        <activity android:name=".App.DetailTransactionActivity" />
+        <activity android:name=".App.TransactionActivity" />
+        <activity android:name=".App.SuccessActivity" />
+        <activity android:name=".App.ConfirmActivity" />
+        <activity android:name=".App.AccountActivity" />
+        <activity android:name=".App.DetailActivity" />
+        <activity android:name=".Sign.SignUpActivity" />
+        <activity android:name=".Sign.SignInActivity" />
+        <activity android:name=".Onboarding.OnboardingScreen" />
+        <activity android:name=".App.MainActivity" />
 
         <meta-data
             android:name="preloaded_fonts"

@@ -16,4 +16,18 @@
     <string name="day">/ Day</string>
     <string name="available_cars">Available Cars</string>
     <string name="select_date">select date</string>
+    <string name="booked_cars">Coming soon cars</string>
+    <string name="car_detail">Car Detail</string>
+    <string name="order_confirmation">Order Confirmation</string>
+    <string name="transaction_id">Transaction ID</string>
+    <string name="booking_date">Booking Date</string>
+    <string name="car_merk">Car Merk</string>
+    <string name="car_type">Car Type</string>
+    <string name="username">Username</string>
+    <string name="price">Price</string>
+    <string name="book_now">book now</string>
+    <string name="my_account">My Account</string>
+    <string name="update">update</string>
+    <string name="booking_detail">Booking Detail</string>
+    <string name="cancel_booking">cancel booking</string>
 </resources>

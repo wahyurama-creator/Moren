@@ -18,7 +18,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.android.material.button.MaterialButton;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
-import com.wahyurama.moren.MainActivity;
+import com.wahyurama.moren.App.MainActivity;
 import com.wahyurama.moren.Onboarding.OnboardingScreen;
 import com.wahyurama.moren.R;
 
@@ -56,10 +56,10 @@ public class SignInActivity extends AppCompatActivity {
         mLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String email = mEmail.getText().toString().toString().trim();
+                String email = mEmail.getText().toString().trim();
                 String password = mPassword.getText().toString().trim();
 
-                if (TextUtils.isEmpty(email)){
+                if (TextUtils.isEmpty(email)) {
                     mEmail.setError("Email Address can't empty");
                     return;
                 } else if (TextUtils.isEmpty(password)) {

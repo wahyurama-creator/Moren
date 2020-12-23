@@ -15,7 +15,7 @@ import androidx.viewpager2.widget.ViewPager2;
 import com.google.android.material.button.MaterialButton;
 import com.google.firebase.auth.FirebaseAuth;
 import com.wahyurama.moren.Adapter.OnboardingAdapter;
-import com.wahyurama.moren.MainActivity;
+import com.wahyurama.moren.App.MainActivity;
 import com.wahyurama.moren.R;
 import com.wahyurama.moren.Sign.SignInActivity;
 
@@ -148,7 +148,7 @@ public class OnboardingScreen extends AppCompatActivity {
         }
 
         if (index == onboardingAdapter.getItemCount() - 1) {
-            buttonOnboardingAction.setText("Get Started");
+            buttonOnboardingAction.setText("Start");
         } else {
             buttonOnboardingAction.setText("Next");
         }

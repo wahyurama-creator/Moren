@@ -44,7 +44,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/iv_create_account"
         android:layout_width="250dp"
         android:layout_height="250dp"
         android:contentDescription="@string/app_name"
@@ -73,7 +73,7 @@
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        app:layout_constraintTop_toBottomOf="@+id/iv_create_account" />
 
     <EditText
         android:id="@+id/inputPassword"

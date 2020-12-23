@@ -1,6 +1,5 @@
 package com.wahyurama.moren.Adapter;
 
-import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.view.LayoutInflater;
@@ -13,7 +12,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
-import com.wahyurama.moren.DetailActivity;
+import com.wahyurama.moren.App.DetailActivity;
 import com.wahyurama.moren.Model.Car;
 import com.wahyurama.moren.R;
 
@@ -22,8 +21,8 @@ import java.util.ArrayList;
 public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder> {
 
     private static final String Tag = "RecyclerView";
+    private final ArrayList<Car> carList;
     public Context context;
-    private ArrayList<Car> carList;
 
     public RecyclerViewAdapter(Context context, ArrayList<Car> carList) {
         this.context = context;
@@ -41,7 +40,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         return new ViewHolder(view);
     }
 
-    @SuppressLint("SetTextI18n")
+
     @Override
     public void onBindViewHolder(@NonNull RecyclerViewAdapter.ViewHolder holder, int position) {
         // Set data Image
@@ -60,7 +59,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     }
 
     // Method View Holder
-    public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
+    public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
         ImageView ivCar;
         TextView tvMerk, tvType, tvPrice;
